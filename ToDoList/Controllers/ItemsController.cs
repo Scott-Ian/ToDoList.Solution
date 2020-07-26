@@ -10,8 +10,8 @@ namespace ToDoList.Controllers
     [HttpGet("/categories/{categoryId}/items/new")]
     public ActionResult New(int categoryId)
     {
-       Category category = Category.Find(categoryId);
-       return View(category);
+      Category category = Category.Find(categoryId);
+      return View(category);
     }
 
     [HttpGet("/categories/{categoryId}/items/{itemId}")]

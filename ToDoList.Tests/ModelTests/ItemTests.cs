@@ -73,7 +73,7 @@ namespace ToDoList.Tests
       public void Equals_ReturnsTrueIfDescriptionsAreTheSame_Item()
       {
         //Arrange, Act
-        Item firstItem = new Item("Mow teh lawn");
+        Item firstItem = new Item("Mow the lawn");
         Item secondItem = new Item("Mow the lawn");
 
         //Assert
