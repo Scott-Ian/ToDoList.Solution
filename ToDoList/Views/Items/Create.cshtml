@@ -1,5 +1,5 @@
-@* @{
-    Layout = "_Layout";
+@{
+  Layout = "_Layout";
 }
 
 @model ToDoList.Models.Item
@@ -11,9 +11,9 @@
     @Html.LabelFor(model => model.Description)
     @Html.TextBoxFor(model => model.Description)
 
-    @Html.LabelFor(model => model.Category)
+    @Html.Label("Select category")
     @Html.DropDownList("CategoryId")
 
     <input type="submit" value="Add new item" class="btn btn-default" />
 }
-<p>@Html.ActionLink("Show all items", "Index")</p> *@
+<p>@Html.ActionLink("Show all items", "Index")</p>
