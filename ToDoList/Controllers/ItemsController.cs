@@ -33,7 +33,7 @@ namespace ToDoList.Controllers
       _db.Items.Add(item);
       if (CategoryId != 0)
       {
-        _db.CategoryItem.Add(new CategoryItem() { CategoryId = CategoryId, ItemId = item.ItemId })
+        _db.CategoryItem.Add(new CategoryItem() { CategoryId = CategoryId, ItemId = item.ItemId });
       }
       _db.SaveChanges();
       return RedirectToAction("Index");
