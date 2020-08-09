@@ -66,7 +66,7 @@ namespace ToDoList.Controllers
         [HttpPost]
         public async Task<ActionResult> LogOff()
         {
-            await _signInManager.SignOutAsynch();
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Index");
         }
     }
