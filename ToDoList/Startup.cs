@@ -29,7 +29,7 @@ namespace ToDoList
         .AddDbContext<ToDoListContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
 
-      services.AddIdentity<ApplicationUser, IdentityRole()
+      services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ToDoListContext>()
                 .AddDefaultTokenProviders();
     }
